@@ -19,7 +19,7 @@ ul {
     justify-content: center;
 }
 li {
-    padding: 1rem;
+    padding: 1rem 0 1rem 1rem;
 }
 h2 {
     text-transform:uppercase;
@@ -29,8 +29,7 @@ h3 {
 }
 .trait {
     border-right: 1px solid black;
-    height: 1rem ;
-    margin-top: 1rem;
+    padding-right: 1rem;
 }
 img {
     width: 100%;
@@ -68,7 +67,7 @@ nav a:hover {
     padding-top: 2rem;
     color:white;
 }
-#re {
+#logoresidentevil {
     width: 50%;
 }
 
@@ -126,18 +125,18 @@ a p {
 
                                                         /* Footer  */
 
-#blocnl {
+#blocnewsletter {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #292B2C;
     color: white;
 }
-#blocnl h3{
+#blocnewsletter h3{
     justify-self: center;
     padding: 3rem 0 1rem 0;
 }
-#blocnl div {
+#blocnewsletter div {
     display: flex;
     flex-direction: row;
 }
@@ -149,6 +148,7 @@ a p {
 footer .btn {
     max-height: 2rem;
     border: 0;
+    cursor: pointer;
 }
 
 footer section {
@@ -170,8 +170,8 @@ footer img{
     padding-left: 15%;
     align-self: center;
 }
-footer ul div {
-    border: 1px solid white;
+footer .trait {
+    border-right: 1px solid white;
 }
 footer a{
     display: inline-block;
@@ -184,9 +184,26 @@ footer a:hover {
 
 /* MEDIA  */
 
-@media screen and (max-width:1200px) {
-    ul div {
-        display: none;
+@media screen and (max-width:1350px) {
+    ul .trait {
+        border: none;
+    }
+    footer ul {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    footer section {
+        
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0%;
+    }
+    footer img {
+        padding-left: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
 }
